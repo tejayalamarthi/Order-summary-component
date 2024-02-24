@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 body {
+    background: hsl(225, 100%, 94%);
+    font-size: 16px;
     background-color: hsl(225, 38%, 84%);
     display: flex;
     justify-content: center;
@@ -14,6 +16,9 @@ body {
     font-weight: 800;
     font-style: normal;
       background-image: url(images/pattern-background-desktop.svg);
+      background-repeat:no-repeat;
+      background-position: top center;
+      background-size: cover;
 }
 .container{
     max-width: 350px;
@@ -36,17 +41,12 @@ body {
     border-radius: 10px;
     filter: drop-shadow(2px 2px 2px #87d5d8);
     margin: 5px 25px;
-}
-.container_price img{
-    width: 50px;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: hsl(224, 23%, 55%);
+    font-size: 15px;
 }
 button{
-    background-color: hsl(245, 75%, 52%);
+    background-color:none;
     border: none;
-    color: white;
+    color: hsl(224, 23%, 55%);
     border-radius: 5px;
     height: 2rem;
     font-size: .9rem;
@@ -54,7 +54,7 @@ button{
     filter: drop-shadow(2px 2px 2px #87d5d8);
     margin: 8px 40px;
     font-weight: 700;
-    color:white;
+    cursor: pointer;
 }
 .container_text{
     text-align: center;
@@ -73,10 +73,19 @@ p{
 }
 span{
     color: black;
+
 }
 
-.button2 {
-    background-color: #eef6f8;
+.button1 {
+    
+    background-color: hsl(245, 75%, 52%);
     color: black;
-    color: hsl(224, 23%, 55%);
+    color: white;
+}
+a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+.button2:hover {
+    color: black;
 }
